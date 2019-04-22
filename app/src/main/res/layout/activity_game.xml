@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity">
+
+    <TextView
+        android:id="@+id/num2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/num3"
+        app:layout_constraintStart_toStartOf="@+id/num1"
+        app:layout_constraintTop_toBottomOf="@+id/num1" />
+
+    <TextView
+        android:id="@+id/num3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/num4"
+        app:layout_constraintStart_toStartOf="@+id/num2"
+        app:layout_constraintTop_toBottomOf="@+id/num2" />
+
+    <TextView
+        android:id="@+id/num4"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:text="5"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/num5"
+        app:layout_constraintStart_toStartOf="@+id/num3"
+        app:layout_constraintTop_toBottomOf="@+id/num3" />
+
+    <TextView
+        android:id="@+id/num5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/num6"
+        app:layout_constraintStart_toStartOf="@+id/num4"
+        app:layout_constraintTop_toBottomOf="@+id/num4" />
+
+    <TextView
+        android:id="@+id/num6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/num7"
+        app:layout_constraintStart_toStartOf="@+id/num5"
+        app:layout_constraintTop_toBottomOf="@+id/num5" />
+
+    <Button
+        android:id="@+id/resBtn1"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:text="21"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toStartOf="@+id/resBtn2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <Button
+        android:id="@+id/resBtn2"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:text="24"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/resBtn1"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <Button
+        android:id="@+id/resBtn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="22"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/resBtn4"
+        app:layout_constraintTop_toBottomOf="@+id/resBtn2" />
+
+    <Button
+        android:id="@+id/resBtn4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="25"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/resBtn3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resBtn1" />
+
+    <TextView
+        android:id="@+id/num1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="358dp"
+        android:text="5"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/num7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/divider"
+        app:layout_constraintStart_toStartOf="@+id/num6"
+        app:layout_constraintTop_toBottomOf="@+id/num6" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="6dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="186dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/num1" />
+
+    <TextView
+        android:id="@+id/scoreId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="64dp"
+        android:text="Score: "
+        app:layout_constraintEnd_toStartOf="@+id/num1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/rightId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Right: "
+        app:layout_constraintStart_toStartOf="@+id/scoreId"
+        app:layout_constraintTop_toBottomOf="@+id/scoreId" />
+
+    <TextView
+        android:id="@+id/wrongId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:text="Wrong: "
+        app:layout_constraintStart_toStartOf="@+id/rightId"
+        app:layout_constraintTop_toBottomOf="@+id/rightId" />
+
+    <TextView
+        android:id="@+id/timeLeftId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="41dp"
+        android:text="Time left: "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
